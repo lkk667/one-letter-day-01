@@ -23,6 +23,7 @@ def main() -> None:
     if directory:
         os.makedirs(directory, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8", newline="") as handle:
+        # Exactly one byte: no newline, no extra whitespace.
         handle.write(LETTER)
 
 
